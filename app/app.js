@@ -1,15 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  View,
+  TouchableOpacity,
+  Image,
   Text,
-  View
+  ScrollView
 } from 'react-native';
 //import { Examples } from '@shoutem/ui';
 
@@ -17,18 +14,10 @@ export default class xryrok extends Component {
   render() {
     return (
 
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome f to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Xryrok</Text>
+        </View>
+
     );
   }
 }
@@ -36,20 +25,47 @@ export default class xryrok extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    alignItems: 'stretch',
+    backgroundColor: 'white',
+  },
+  header: {
+    height: 75,
+    paddingTop: 22,
+    paddingLeft: 20,
+    flexDirection: 'row',
+    backgroundColor: '#5894f3',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    zIndex: 1001
   },
-  welcome: {
+  body: {
+    flex: 1,
+    zIndex: 1000
+  },
+  menuContainer: {
+    flex: 1,
+    paddingTop: 30,
+    paddingLeft: 40,
+    backgroundColor: '#223f6b'
+  },
+  menuIcon: {
+    width: 30,
+    height: 30
+  },
+  headerTitle: {
+    marginLeft: 30,
+    color: 'white',
+    fontSize: 20
+  },
+  button: {
+    color: '#e0e0e0',
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    marginBottom: 24
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  button2: {
+    color: '#F09B95',
+    fontSize: 20,
+    marginBottom: 24
+  }
 });
 
 AppRegistry.registerComponent('xryrok', () => xryrok);
