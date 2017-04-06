@@ -1,15 +1,16 @@
 /* demo.js is loaded by both index.ios.js and index.android.js */
 
-import random from "lodash.random";
-import range from "lodash.range";
-import React, { Component } from "react";
+import random from 'lodash.random';
+import range from 'lodash.range';
+import React, { Component } from 'react';
 import {
+  AppRegistry,
   ScrollView,
   StyleSheet,
   Platform,
   Text
-} from "react-native";
-import Svg from "react-native-svg";
+} from 'react-native';
+import Svg from 'react-native-svg';
 import {
   VictoryLabel,
   VictoryVoronoiTooltip,
@@ -26,7 +27,7 @@ import {
   VictoryTooltip,
   Flyout,
   VictoryPie
-} from "victory-native";
+} from 'victory-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -57,7 +58,7 @@ const candleData = [
   {x: 8, open: 80, close: 81, high: 83, low: 75}
 ];
 
-export default class Demo extends Component {
+export class Demo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -762,3 +763,5 @@ export default class Demo extends Component {
     );
   }
 }
+
+AppRegistry.registerComponent('Demo', () => Demo);

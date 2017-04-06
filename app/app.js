@@ -14,7 +14,7 @@ import { Nav } from './components/NavigationBar/Nav';
 export default class xryrok extends Component {
   render() {
     return (
-        <Nav /> 
+        <Nav />
     );
   }
 }

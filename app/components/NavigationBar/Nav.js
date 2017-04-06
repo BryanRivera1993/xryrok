@@ -76,7 +76,7 @@ renderContent() {
           <Text style={styles.button2}>Home</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={this.onExamplePress.bind(this, Hello2)}>
-          <Text style={styles.button2}>Hello2</Text>
+          <Text style={styles.button2}>Demo</Text>
         </TouchableOpacity>
       </ScrollView>
     );
