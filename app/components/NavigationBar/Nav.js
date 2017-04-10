@@ -35,7 +35,7 @@ export class Nav extends Component {
               <View style={styles.header}>
                 <Image
                   source={{uri: 'https://shoutem.github.io/img/ui-toolkit/examples/image-3.png'}}
-                  style={{ width: 420, height: 70 }}
+                  style={{ width: 550, height: 70 }}
                 >
                   <NavigationBar
                     styleName="clear"

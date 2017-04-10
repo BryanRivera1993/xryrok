@@ -9,7 +9,7 @@ import {
   Navigator
 } from 'react-native';
 
-import { Nav } from './components/NavigationBar/Nav';
+import { Nav } from '../../components/NavigationBar/Nav';
 
 export default class xryrok extends Component {
   render() {
