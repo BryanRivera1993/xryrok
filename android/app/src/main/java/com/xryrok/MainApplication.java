@@ -12,6 +12,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.surialabs.rn.geofencing.GeoFencingPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -32,6 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
             new PhotoViewPackage(),
             new RNSharePackage(),
             new LinearGradientPackage(),
+            new GeoFencingPackage(),
             new VectorIconsPackage()
       );
     }

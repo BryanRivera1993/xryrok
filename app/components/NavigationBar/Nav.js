@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  TouchableOpacity,
   StyleSheet,
   View,
-  Image,
-  TouchableOpacity,
   ScrollView
 } from 'react-native';
 import {
+  Image,
   NavigationBar,
   Heading,
   Title,
@@ -15,10 +15,12 @@ import {
   Subtitle,
   Text,
   Caption,
-  Button
+  Button,
+  Tile
 } from '@shoutem/ui/index';
 import { Hello } from './Hello';
 import { Hello2 } from './Hello2';
+import { Geo } from './Geo';
 
 
 export class Nav extends Component {
@@ -28,14 +30,14 @@ export class Nav extends Component {
       currentExample: Hello
   }
 }
-
+////////////////////
   render(){
     return (
             <View style={styles.container}>
               <View style={styles.header}>
                 <Image
                   source={{uri: 'https://shoutem.github.io/img/ui-toolkit/examples/image-3.png'}}
-                  style={{ width: 550, height: 70 }}
+                  style={{ width: 435, height: 70 }}
                 >
                   <NavigationBar
                     styleName="clear"
@@ -60,6 +62,8 @@ export class Nav extends Component {
               <View style={styles.body}>
                 {this.renderContent()}
               </View>
+
+
             </View>
     );
 }
@@ -106,6 +110,7 @@ const styles = StyleSheet.create({
   },
   body: {
       flex: 1,
+      alignItems: 'center',
       zIndex: 1000
   },
   menuContainer: {
