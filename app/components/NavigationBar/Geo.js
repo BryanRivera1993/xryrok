@@ -12,6 +12,7 @@ import {
   Navigator
 } from 'react-native';
 import Svg from 'react-native-svg';
+import GeoFencing from 'react-native-geo-fencing';
 
 const styles = StyleSheet.create({
   container: {
