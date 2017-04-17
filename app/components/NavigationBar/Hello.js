@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, ScrollView, StyleSheet } from 'react-native';
+import {Actions} from 'react-native-router-flux';
+import Button from 'react-native-button';
 import { Examples } from '@shoutem/ui';
 
-export class Hello extends Component {
+export default class Hello extends Component {
   render() {
     return (
-      <Examples />
-    );
+      <ScrollView style={styles.menuContainer}>
+        <Button onPress={Actions.pageOne}>Go to Register page</Button><Button onPress={Actions.pageOne}>Go to Register page</Button>
+        <Examples />
+      </ScrollView>
+    )
   }
 }
 
-AppRegistry.registerComponent('Hello', () => Hello);
+const styles = StyleSheet.create({
+    menuContainer: {
+    flex: 1,
+    paddingTop: 30,
+    backgroundColor: 'white'
+  }
+});
