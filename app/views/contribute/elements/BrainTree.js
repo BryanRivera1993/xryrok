@@ -7,6 +7,8 @@ import {
   View
 } from 'react-native';
 import Braintree from 'react-native-braintree-android';
+import Button from 'react-native-button';
+import {Actions} from 'react-native-router-flux';
 
 export default class Payment extends Component {
 
@@ -35,6 +37,7 @@ export default class Payment extends Component {
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
+        <Button onPress={Actions.home}>Go to Homee</Button>
       </View>
     );
   }
