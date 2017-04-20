@@ -10,8 +10,10 @@ export default class Home extends Component {
         <Text style={styles.welcome}>
           Welcome Home!
         </Text>
-        <Button onPress={Actions.pageOne}>Go to Page One</Button>
-        <Button onPress={Actions.pageTwo}>Go to Page Two</Button>
+        <Button style={styles.buttons} onPress={Actions.pageOne}>Go to Page One</Button>
+        <Button style={styles.buttons} onPress={Actions.pageTwo}>Go to Page Two</Button>
+        <Button style={styles.buttons} onPress={Actions.pageThree}>Go to Payment</Button>
+        <Button style={styles.buttons} onPress={Actions.pageFour}>Go to Cards</Button>
       </View>
     )
   }
@@ -22,6 +24,16 @@ const styles = StyleSheet.create({
       fontSize: 20,
       textAlign: 'center',
       margin: 10,
+    },
+    buttons:{
+      width:110,
+      height:60,
+      borderWidth:1,
+      borderColor:'#e7e7e7',
+      textAlign: 'center',
+      margin: 5,
+      justifyContent:'center',
+      alignItems:'center',
     },
     menuContainers: {
         flex: 1,

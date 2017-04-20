@@ -60,6 +60,8 @@
 		734E7A40E5C74B45A1A84075 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E34FF53FD64DDEAA870DCA /* Rubik-MediumItalic.ttf */; };
 		F2C3BE8B9F93461E87A424BF /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E267EAFCC1BE4DDE8F1C883A /* Rubik-Regular.ttf */; };
 		13B9717E47F24AC58004C99B /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534624A132E241B48B808B55 /* libRNSVG.a */; };
+		B66DE3E295DA4870B6B59CAC /* libRCTBraintree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54143DE487AC431BA3147319 /* libRCTBraintree.a */; };
+		154FDEDABF43421B88BC8661 /* libRNBraintree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA667E8859F4FB498C0E321 /* libRNBraintree.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +310,10 @@
 		E267EAFCC1BE4DDE8F1C883A /* Rubik-Regular.ttf */ = {isa = PBXFileReference; name = "Rubik-Regular.ttf"; path = "../node_modules/@shoutem/ui/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		7064394838AF4EDAB6023AED /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		534624A132E241B48B808B55 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		0BFD428C5F0E46E8BB4915BD /* RCTBraintree.xcodeproj */ = {isa = PBXFileReference; name = "RCTBraintree.xcodeproj"; path = "../node_modules/react-native-braintree-xplat/ios/RCTBraintree.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		54143DE487AC431BA3147319 /* libRCTBraintree.a */ = {isa = PBXFileReference; name = "libRCTBraintree.a"; path = "libRCTBraintree.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		643A0C4F12914DB8A73B15CB /* RNBraintree.xcodeproj */ = {isa = PBXFileReference; name = "RNBraintree.xcodeproj"; path = "../node_modules/rn-braintree/ios/RNBraintree.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		ADA667E8859F4FB498C0E321 /* libRNBraintree.a */ = {isa = PBXFileReference; name = "libRNBraintree.a"; path = "libRNBraintree.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +344,8 @@
 				8EF368FF38B44082BEF27208 /* libBVLinearGradient.a in Frameworks */,
 				E154369887C04DA9836BB967 /* libRNShare.a in Frameworks */,
 				13B9717E47F24AC58004C99B /* libRNSVG.a in Frameworks */,
+				B66DE3E295DA4870B6B59CAC /* libRCTBraintree.a in Frameworks */,
+				154FDEDABF43421B88BC8661 /* libRNBraintree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +516,8 @@
 				5592ABE687074B21A3C90B80 /* BVLinearGradient.xcodeproj */,
 				193AEC7B9A4C460AA9C6EECD /* RNShare.xcodeproj */,
 				7064394838AF4EDAB6023AED /* RNSVG.xcodeproj */,
+				0BFD428C5F0E46E8BB4915BD /* RCTBraintree.xcodeproj */,
+				643A0C4F12914DB8A73B15CB /* RNBraintree.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1090,6 +1100,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1097,6 +1109,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Debug;
@@ -1121,6 +1135,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1128,6 +1144,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Release;
@@ -1153,6 +1171,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Debug;
@@ -1177,6 +1197,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Release;
@@ -1210,6 +1232,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1217,6 +1241,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Debug;
@@ -1250,6 +1276,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1257,6 +1285,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-xplat/ios/RCTBraintree/**",
+					"$(SRCROOT)/../node_modules/rn-braintree/ios/RNBraintree",
 				);
 			};
 			name = Release;
@@ -1285,6 +1315,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1309,6 +1341,8 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

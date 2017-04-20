@@ -13,6 +13,9 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.surialabs.rn.geofencing.GeoFencingPackage;
+import com.surialabs.rn.braintree.BraintreePackage;
+import android.content.Intent;
+import android.content.Context;
 
 import java.util.Arrays;
 import java.util.List;
@@ -33,8 +36,9 @@ public class MainApplication extends Application implements ReactApplication {
             new PhotoViewPackage(),
             new RNSharePackage(),
             new LinearGradientPackage(),
-            new GeoFencingPackage(),
-            new VectorIconsPackage()
+            new VectorIconsPackage(),
+            new BraintreePackage(),
+            new GeoFencingPackage()
       );
     }
   };
