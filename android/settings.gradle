@@ -1,4 +1,6 @@
 rootProject.name = 'xryrok'
+include ':react-native-braintree-xplat'
+project(':react-native-braintree-xplat').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-braintree-xplat/android')
 include ':rn-braintree'
 project(':rn-braintree').projectDir = new File(rootProject.projectDir, '../node_modules/rn-braintree/android')
 include ':react-native-svg'
@@ -13,7 +15,5 @@ include ':react-native-vector-icons'
 project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
 include ':react-native-geo-fencing'
 project(':react-native-geo-fencing').projectDir = new File(settingsDir, '../node_modules/react-native-geo-fencing/android')
-include ':react-native-braintree'
-project(':react-native-braintree').projectDir = new File(settingsDir, '../node_modules/react-native-braintree-android')
 
 include ':app'

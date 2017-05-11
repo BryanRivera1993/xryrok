@@ -8,7 +8,7 @@ export default class Hello extends Component {
   render() {
     return (
       <ScrollView style={styles.menuContainer}>
-        <Button onPress={Actions.pageOne}>Go to Register page</Button><Button onPress={Actions.pageOne}>Go to Register page</Button>
+        <Button onPress={Actions.pageOne}>Go to Register page</Button><Button onPress={Actions.home}>Go to home page</Button>
         <Examples />
       </ScrollView>
     )
