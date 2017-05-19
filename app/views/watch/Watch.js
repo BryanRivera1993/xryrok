@@ -11,7 +11,7 @@ import Button from 'react-native-button';
 import {Actions} from 'react-native-router-flux';
 import YouTube from 'react-native-youtube';
 
-export default class Payment extends Component {
+export default class Watch extends Component {
 
   state = {
       isReady: false,

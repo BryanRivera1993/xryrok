@@ -3,10 +3,9 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Actions, Scene, Router, NavigationBar} from 'react-native-router-flux';
 
 import Test from './views/Test';
-import Hello from './components/NavigationBar/Hello';
 import Home from './views/main/Home';
-import Payment from './views/contribute/elements/BrainTree';
-import Cards from './views/cards/SwipeCards';
+import Watch from './views/watch/Watch';
+import DeckSwiper from './views/cards/Deck';
 import Platform from './views/platform/Platform';
 
 const scenes = Actions.create(
@@ -14,8 +13,8 @@ const scenes = Actions.create(
       <Scene key="home" component={Home} initial={"true"} type={"reset"} />
       <Scene key="pageOne" component={Test} type={"replace"}/>
       <Scene key="pageTwo" component={Platform} type={"replace"}/>
-      <Scene key="pageThree" component={Payment} type={"replace"}/>
-      <Scene key="pageFour" component={Cards} type={"replace"}/>
+      <Scene key="pageThree" component={Watch} type={"replace"}/>
+      <Scene key="pageFour" component={DeckSwiper} type={"replace"}/>
     </Scene>
 );
 

@@ -15,6 +15,7 @@ import com.facebook.soloader.SoLoader;
 import com.surialabs.rn.geofencing.GeoFencingPackage;
 import android.content.Intent;
 import android.content.Context;
+import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 
 import java.util.Arrays;
 import java.util.List;
@@ -36,7 +37,8 @@ public class MainApplication extends Application implements ReactApplication {
             new RNSharePackage(),
             new LinearGradientPackage(),
             new VectorIconsPackage(),
-            new GeoFencingPackage()
+            new GeoFencingPackage(),
+            new ReactNativeYouTube()
       );
     }
   };
